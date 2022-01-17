@@ -43,6 +43,8 @@ jobs:
       - name: Install dependenices and build for MacOS
         run: | 
           which codesign
+          which codesign_allocate
+          ls
           sudo xcode-select --reset
           npm install
           npm run mac-x64
