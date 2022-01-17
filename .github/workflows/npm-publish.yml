@@ -42,7 +42,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependenices and build for MacOS
         run: | 
-          ls /Applications/Xcode_13.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/
+          which codesign
           sudo xcode-select --reset
           npm install
           npm run mac-x64
