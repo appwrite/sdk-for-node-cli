@@ -42,6 +42,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependenices and build for MacOS
         run: | 
+          sudo xcode-select --reset
           npm install
           npm run mac-x64
           npm run mac-arm64
