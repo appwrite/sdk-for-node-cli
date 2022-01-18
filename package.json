@@ -1,10 +1,16 @@
 {
   "name": "appwrite-cli",
+  "homepage": "https://appwrite.io/support",
+  "description": "Repo short description goes here",
   "version": "0.0.12",
-  "description": "Welcome to the Appwrite CLI",
+  "license": "",
   "main": "index.js",
   "bin": {
     "appwrite": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,8 +21,6 @@
     "windows-x64": "pkg -t node16-win-x64 -o build/appwrite-cli-win-x64.exe package.json",
     "windows-arm64": "pkg -t node16-win-arm64 -o build/appwrite-cli-win-arm64.exe package.json"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.24.0",
     "chalk": "4.1.2",
