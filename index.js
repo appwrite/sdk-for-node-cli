@@ -3,7 +3,8 @@ const program = require("commander");
 const chalk = require("chalk");
 const { version } = require("./package.json");
 const { commandDescriptions } = require("./lib/parser");
-const { client, login, logout } = require("./lib/commands/general");
+const { client } = require("./lib/commands/generic");
+const { login, logout } = require("./lib/commands/generic");
 const { init } = require("./lib/commands/init");
 const { deploy } = require("./lib/commands/deploy");
 const { account } = require("./lib/commands/account");
@@ -22,10 +23,9 @@ program
   .version(version, "-v, --version")
   .showSuggestionAfterError()
   .addCommand(login)
-  .addCommand(logout)
-  .addCommand(client)
   .addCommand(init)
   .addCommand(deploy)
+  .addCommand(logout)
   .addCommand(account)
   .addCommand(avatars)
   .addCommand(database)
@@ -36,4 +36,5 @@ program
   .addCommand(storage)
   .addCommand(teams)
   .addCommand(users)
+  .addCommand(client)
   .parse(process.argv);
