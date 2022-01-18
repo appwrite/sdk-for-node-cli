@@ -1,6 +1,6 @@
 # Appwrite NAME SDK
 
-![License](https://img.shields.io/github/license/appwrite/node-cli.svg?style=flat-square)
+![License](https://img.shields.io/github/license/appwrite/sdk-for-node-cli.svg?style=flat-square)
 ![Version](https://img.shields.io/badge/api%20version-0.12.1-blue.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/com/appwrite/sdk-generator?style=flat-square)](https://travis-ci.com/appwrite/sdk-generator)
 [![Twitter Account](https://img.shields.io/twitter/follow/appwrite_io?color=00acee&label=twitter&style=flat-square)](https://twitter.com/appwrite_io)
@@ -14,7 +14,7 @@ Repo description goes here
 
 ## Installation
 
-The Appwrite CLI is a Node based command line tool to help you interact with the Appwrite API. The CLI is distributed both as an [`npm package`](https://www.npmjs.com/package/appwrite-cli) as well as [pre built binaries](https://github.com/christyjacob4/appwrite-node-cli/releases/latest) for specific operating systems and architectures.
+The Appwrite CLI is a Node based command line tool to help you interact with the Appwrite API. The CLI is distributed both as an [`npm package`](https://www.npmjs.com/package/appwrite-cli) as well as [pre built binaries](https://github.com/appwrite/sdk-for-node-cli/releases/latest) for specific operating systems and architectures.
 
 ### Install using NPM
 ---
