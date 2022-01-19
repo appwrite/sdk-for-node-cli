@@ -1,4 +1,14 @@
 {
     "projectId": "61cdb0f96ff7c7e495f0",
-    "projectName": "Project X"
+    "projectName": "Project X",
+    "functions": [
+        {
+            "$id": "61e82507da414412658f",
+            "name": "My Awesome Function",
+            "runtime": "node-16.0",
+            "path": "My Awesome Function",
+            "command": "node index.js",
+            "vars": []
+        }
+    ]
 }
