@@ -27,7 +27,7 @@ APPWRITE_EXECUTABLE_FILEPATH="$APPWRITE_INSTALL_DIR/$APPWRITE_EXECUTABLE_NAME"
 APPWRITE_TEMP_NAME=temp-$(date +%s)
 
 # Appwrite CLI image name
-GITHUB_REPOSITORY_NAME=christyjacob4/appwrite-node-cli
+GITHUB_REPOSITORY_NAME=appwrite/sdk-for-node-cli
 
 # sudo is required to copy executable to APPWRITE_INSTALL_DIR for linux
 USE_SUDO="false"
