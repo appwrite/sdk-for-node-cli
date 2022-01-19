@@ -18,6 +18,16 @@ jobs:
         run: | 
           sudo apt install qemu binfmt-support qemu-user-static
           update-binfmts --display
+      - name: Setup ldid
+        run: |
+          sudo apk add --no-cache \
+          build-base \
+          git \
+          libplist-dev \
+          libplist-static \
+          openssl-dev \
+          openssl-libs-static
+
           git clone git://git.saurik.com/ldid.git
           cd ./ldid
           g++ -pipe -o ldid ldid.cpp -I. -x c lookup2.c -lcrypto -lplist-2.0 -Os -fwhole-program -flto -s -static
