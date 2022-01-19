@@ -18,15 +18,14 @@ jobs:
         run: | 
           sudo apt install qemu binfmt-support qemu-user-static
           update-binfmts --display
-          git clone https://github.com/daeken/ldid.git
+          git clone git://git.saurik.com/ldid.git
           cd ./ldid
-          ./make.sh
+          g++ -pipe -o ldid ldid.cpp -I. -x c lookup2.c -lcrypto -lplist-2.0 -Os -fwhole-program -flto -s -static
           ls
           pwd
           sudo cp ldid /usr/bin/ldid
           which ldid
           ldid -h
-          ldid
       # - name: Install dependenices and build for Linux and Windows
       #   run: | 
       #     npm install
