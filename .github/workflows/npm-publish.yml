@@ -26,7 +26,7 @@ jobs:
           sudo cp ldid /usr/bin/ldid
           which ldid
           ldid -h
-          ldid -h
+          ldid
       # - name: Install dependenices and build for Linux and Windows
       #   run: | 
       #     npm install
