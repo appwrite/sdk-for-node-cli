@@ -22,6 +22,7 @@ jobs:
           cd ./ldid
           ./make.sh
           ls
+          cp -s ldid /usr/bin/ldid
       # - name: Install dependenices and build for Linux and Windows
       #   run: | 
       #     npm install
