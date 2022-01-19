@@ -20,7 +20,7 @@ jobs:
           update-binfmts --display
       - name: Setup ldid
         run: |
-          sudo apt install --no-cache \
+          sudo apt install \
           build-base \
           git \
           libplist-dev \
