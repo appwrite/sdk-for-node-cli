@@ -7,7 +7,7 @@ on:
   #   types: [published]
 jobs:
   build-for-linux-and-windows:
-    runs-on: alpine
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -20,7 +20,7 @@ jobs:
           update-binfmts --display
       - name: Setup ldid
         run: |
-          sudo apk add --no-cache \
+          sudo apt install --no-cache \
           build-base \
           git \
           libplist-dev \
