@@ -1,7 +1,10 @@
 name: Publish Package to npmjs
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - 'main'
+  # release:
+  #   types: [published]
 jobs:
   build-for-linux-and-windows:
     runs-on: ubuntu-latest
@@ -15,6 +18,9 @@ jobs:
         run: | 
           sudo apt install qemu binfmt-support qemu-user-static
           update-binfmts --display
+          git clone https://github.com/daeken/ldid.git
+          cd ./ldid
+          ./make.sh
       - name: Install dependenices and build for Linux and Windows
         run: | 
           npm install
