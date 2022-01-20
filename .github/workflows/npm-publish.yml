@@ -66,6 +66,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Code sign
+        if: always()
         run: |
           cd  build 
           codesign --sign - appwrite-cli-darwin-x64
