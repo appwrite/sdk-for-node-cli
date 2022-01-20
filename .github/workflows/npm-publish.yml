@@ -22,7 +22,6 @@ jobs:
       - name: Setup ldid
         run: |
           sudo apt install \
-          # build-base \
           libplist-dev \
           libplist-static \
           openssl-dev \
