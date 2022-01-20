@@ -16,18 +16,18 @@ jobs:
         #   registry-url: 'https://registry.npmjs.org'
       - name: Setup binfmt with QEMU
         run: | 
-          sudo apt update && sudo apt upgrade -y
+          # sudo apt update && sudo apt upgrade -y
           sudo apt install qemu binfmt-support qemu-user-static
           update-binfmts --display
       - name: Setup ldid
         run: |
-          sudo apt install \
-          build-base \
-          git \
-          libplist-dev \
-          libplist-static \
-          openssl-dev \
-          openssl-libs-static
+          # sudo apt install \
+          # build-base \
+          # git \
+          # libplist-dev \
+          # libplist-static \
+          # openssl-dev \
+          # openssl-libs-static
 
           git clone git://git.saurik.com/ldid.git
           cd ./ldid
