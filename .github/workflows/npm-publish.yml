@@ -63,11 +63,13 @@ jobs:
           npm install
           npm run mac-x64
           npm run mac-arm64
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Code sign
+        run: |
           cd  build 
           codesign --sign - appwrite-cli-darwin-x64
           codesign --sign - appwrite-cli-darwin-arm64
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - uses: fnkr/github-action-ghr@v1
         env:
           GHR_PATH: build/
