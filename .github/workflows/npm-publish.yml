@@ -21,9 +21,9 @@ jobs:
           update-binfmts --display
       - name: Setup ldid
         run: |
-          # sudo apt-get install libimobiledevice-dev libplist-dev libusbmuxd-dev libssl-dev
+          sudo apt-get install libimobiledevice-dev libplist-dev libusbmuxd-dev libssl-dev
 
-          sudo apt-get install libplist-dev libplist-static openssl-dev openssl-libs-static
+          # sudo apt-get install libplist-dev libplist-static openssl-dev openssl-libs-static
 
           git clone git://git.saurik.com/ldid.git
           cd ./ldid
