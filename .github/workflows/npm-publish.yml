@@ -17,7 +17,7 @@ jobs:
         #   registry-url: 'https://registry.npmjs.org'
       - name: Setup binfmt with QEMU
         run: | 
-          sudo apk add qemu binfmt-support qemu-user-static
+          apk add qemu binfmt-support qemu-user-static
           update-binfmts --display
       - name: Setup ldid
         run: |
