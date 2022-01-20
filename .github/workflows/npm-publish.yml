@@ -33,7 +33,6 @@ jobs:
           npm run windows-arm64
           npm run mac-x64
           npm run mac-arm64
-          npm publish
       - name: Publish NPM library
         run: npm publish
         env:
