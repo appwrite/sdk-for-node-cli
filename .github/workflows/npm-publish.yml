@@ -22,11 +22,8 @@ jobs:
         run: |
           git clone https://github.com/tpoechtrager/ldid
           cd ./ldid
-          make
+          sudo make
           sudo make install
-          pwd
-          which ldid
-          ldid -h
       - name: Install dependenices and build for Linux and Windows
         run: | 
           npm install
