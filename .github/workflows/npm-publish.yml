@@ -8,7 +8,6 @@ on:
 jobs:
   build-for-linux-and-windows:
     runs-on: ubuntu-latest
-    container: node:alpine3.15
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -17,11 +16,12 @@ jobs:
         #   registry-url: 'https://registry.npmjs.org'
       - name: Setup binfmt with QEMU
         run: | 
-          apk add qemu binfmt-support qemu-user-static
+          sudo apt update && sudo apt upgrade -y
+          sudo apt install qemu binfmt-support qemu-user-static
           update-binfmts --display
       - name: Setup ldid
         run: |
-          sudo apk add --no-cache \
+          sudo apt install \
           build-base \
           git \
           libplist-dev \
