@@ -21,13 +21,12 @@ jobs:
           update-binfmts --display
       - name: Setup ldid
         run: |
-          # sudo apt install \
+          sudo apt install \
           # build-base \
-          # git \
-          # libplist-dev \
-          # libplist-static \
-          # openssl-dev \
-          # openssl-libs-static
+          libplist-dev \
+          libplist-static \
+          openssl-dev \
+          openssl-libs-static
 
           git clone git://git.saurik.com/ldid.git
           cd ./ldid
