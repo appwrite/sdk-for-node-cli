@@ -69,7 +69,6 @@ jobs:
         if: always()
         run: |
           cd  build 
-          codesign --sign - appwrite-cli-darwin-x64
           codesign --sign - appwrite-cli-darwin-arm64
       - uses: fnkr/github-action-ghr@v1
         env:
