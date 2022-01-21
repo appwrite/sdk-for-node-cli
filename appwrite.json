@@ -3,66 +3,15 @@
     "projectName": "Project X",
     "functions": [
         {
-            "$id": "61e82507da414412658f",
-            "name": "My Awesome Function",
+            "$id": "61eaacba8cf9918b9586",
+            "name": "func",
             "runtime": "node-16.0",
-            "path": "My Awesome Function",
-            "command": "node index.js",
-            "vars": []
-        },
-        {
-            "$id": "61ea9dcd4389a1650f3d",
-            "name": "func-1",
-            "runtime": "node-16.0",
-            "path": "func-1",
+            "path": "func",
             "command": "",
             "vars": []
         }
     ],
     "collections": [
-        {
-            "$id": "61cf008ef352e0e16522",
-            "$read": [
-                "role:all"
-            ],
-            "$write": [
-                "role:all"
-            ],
-            "name": "Millenium problems",
-            "enabled": true,
-            "permission": "collection",
-            "attributes": [
-                {
-                    "key": "Name",
-                    "type": "string",
-                    "status": "available",
-                    "required": false,
-                    "array": false,
-                    "size": 255,
-                    "default": null
-                },
-                {
-                    "key": "Description",
-                    "type": "string",
-                    "status": "available",
-                    "required": false,
-                    "array": false,
-                    "size": 255,
-                    "default": null
-                },
-                {
-                    "key": "Difficulty",
-                    "type": "integer",
-                    "status": "available",
-                    "required": false,
-                    "array": false,
-                    "min": -9223372036854776000,
-                    "max": 9223372036854776000,
-                    "default": null
-                }
-            ],
-            "indexes": []
-        },
         {
             "$id": "61d1d51fb3b93a368ade",
             "$read": [],
@@ -123,6 +72,39 @@
                     ]
                 }
             ]
+        },
+        {
+            "$id": "61cf008ef352e0e16522",
+            "$read": [
+                "role:all"
+            ],
+            "$write": [
+                "role:all"
+            ],
+            "name": "Millenium problems",
+            "enabled": true,
+            "permission": "collection",
+            "attributes": [
+                {
+                    "key": "Name",
+                    "type": "string",
+                    "status": "available",
+                    "required": false,
+                    "array": false,
+                    "size": 255,
+                    "default": null
+                },
+                {
+                    "key": "Description",
+                    "type": "string",
+                    "status": "available",
+                    "required": false,
+                    "array": false,
+                    "size": 255,
+                    "default": null
+                }
+            ],
+            "indexes": []
         }
     ]
 }
