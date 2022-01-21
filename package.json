@@ -2,7 +2,7 @@
   "name": "appwrite-cli",
   "homepage": "https://appwrite.io/support",
   "description": "Repo short description goes here",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "license": "",
   "main": "index.js",
   "bin": {

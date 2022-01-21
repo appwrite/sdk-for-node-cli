@@ -60,11 +60,11 @@ getSystemInfo() {
     
     ARCH=$(uname -m)
     case $ARCH in
-        i386|i686) ARCH="x86" ;;
-        armv6*) ARCH="armv6" ;;
-        armv7*) ARCH="armv7" ;;
+        i386|i686) ARCH="x64" ;;
+        x86_64) ARCH="x64";;
+        armv6*) ARCH="arm64" ;;
+        armv7*) ARCH="arm64" ;;
         aarch64*) ARCH="arm64" ;;
-        x86_64) ARCH="amd64";;
     esac
 
     OS=$(echo `uname`|tr '[:upper:]' '[:lower:]')
