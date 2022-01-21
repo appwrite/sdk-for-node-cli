@@ -1,0 +1,14 @@
+{
+    "projectId": "61eb212f95d6845dfb3e",
+    "projectName": "awesome",
+    "functions": [
+        {
+            "$id": "61eb2957abb9e19a549d",
+            "name": "func1",
+            "runtime": "node-16.0",
+            "path": "func1",
+            "command": "",
+            "entrypoint": "src/index.js"
+        }
+    ]
+}
