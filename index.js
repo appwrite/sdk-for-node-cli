@@ -9,8 +9,8 @@ const { init } = require("./lib/commands/init");
 const { deploy } = require("./lib/commands/deploy");
 const { account } = require("./lib/commands/account");
 const { avatars } = require("./lib/commands/avatars");
-const { database } = require("./lib/commands/database");
 const { functions } = require("./lib/commands/functions");
+const { database } = require("./lib/commands/database");
 const { health } = require("./lib/commands/health");
 const { locale } = require("./lib/commands/locale");
 const { projects } = require("./lib/commands/projects");
@@ -28,8 +28,8 @@ program
   .addCommand(logout)
   .addCommand(account)
   .addCommand(avatars)
-  .addCommand(database)
   .addCommand(functions)
+  .addCommand(database)
   .addCommand(health)
   .addCommand(locale)
   .addCommand(projects)
