@@ -2,7 +2,7 @@
 const program = require("commander");
 const chalk = require("chalk");
 const { version } = require("./package.json");
-const { commandDescriptions } = require("./lib/parser");
+const { commandDescriptions, cliConfig } = require("./lib/parser");
 const { client } = require("./lib/commands/generic");
 const { login, logout } = require("./lib/commands/generic");
 const { init } = require("./lib/commands/init");
@@ -21,6 +21,14 @@ const { users } = require("./lib/commands/users");
 program
   .description(commandDescriptions['main'])
   .version(version, "-v, --version")
+  .option("--verbose", "Show complete error log")
+  .option("--json", "Output in JSON format")
+  .on("option:json", () => {
+    cliConfig.json = true;
+  })
+  .on("option:verbose", () => {
+    cliConfig.verbose = true;
+  })
   .showSuggestionAfterError()
   .addCommand(login)
   .addCommand(init)
@@ -38,3 +46,4 @@ program
   .addCommand(users)
   .addCommand(client)
   .parse(process.argv);
+  
